@@ -1,0 +1,556 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"628 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 628: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"166
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"678
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 678: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"216
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 216: extern volatile unsigned char PORTC __attribute__((address(0x007)));
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+[v F427 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
+[v __delay `JF427 ~T0 @X0 0 e ]
+[p i __delay ]
+"26 newmain.c
+[p x FOSC = INTRCIO ]
+"27
+[p x WDTE = OFF ]
+"28
+[p x PWRTE = OFF ]
+"29
+[p x MCLRE = OFF ]
+"30
+[p x BOREN = OFF ]
+"31
+[p x CP = OFF ]
+"32
+[p x CPD = OFF ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 218: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"268
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 268: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"288
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 288: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 366: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"408
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 408: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"415
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 415: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"422
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 422: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"429
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 429: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"494
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 494: __asm("CMCON equ 019h");
+[; <" CMCON equ 019h ;# ">
+"553
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 553: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"630
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 630: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"680
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 680: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"730
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 730: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"772
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 772: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"806
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 806: __asm("OSCCAL equ 090h");
+[; <" OSCCAL equ 090h ;# ">
+"866
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 866: __asm("WPUA equ 095h");
+[; <" WPUA equ 095h ;# ">
+"871
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 871: __asm("WPU equ 095h");
+[; <" WPU equ 095h ;# ">
+"954
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 954: __asm("IOCA equ 096h");
+[; <" IOCA equ 096h ;# ">
+"959
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 959: __asm("IOC equ 096h");
+[; <" IOC equ 096h ;# ">
+"1052
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1052: __asm("VRCON equ 099h");
+[; <" VRCON equ 099h ;# ">
+"1112
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1112: __asm("EEDAT equ 09Ah");
+[; <" EEDAT equ 09Ah ;# ">
+"1117
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1117: __asm("EEDATA equ 09Ah");
+[; <" EEDATA equ 09Ah ;# ">
+"1150
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1150: __asm("EEADR equ 09Bh");
+[; <" EEADR equ 09Bh ;# ">
+"1157
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1157: __asm("EECON1 equ 09Ch");
+[; <" EECON1 equ 09Ch ;# ">
+"1195
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f630.h: 1195: __asm("EECON2 equ 09Dh");
+[; <" EECON2 equ 09Dh ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"41 newmain.c
+[; ;newmain.c: 41: int main(int argc, char** argv)
+[v _main `(i ~T0 @X0 1 ef2`i`**uc ]
+"42
+[; ;newmain.c: 42: {
+{
+[e :U _main ]
+"41
+[; ;newmain.c: 41: int main(int argc, char** argv)
+[v _argc `i ~T0 @X0 1 r1 ]
+[v _argv `**uc ~T0 @X0 1 r2 ]
+"42
+[; ;newmain.c: 42: {
+[f ]
+"43
+[; ;newmain.c: 43:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+"44
+[; ;newmain.c: 44:     PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"45
+[; ;newmain.c: 45:     TRISC = 0;
+[e = _TRISC -> -> 0 `i `uc ]
+"46
+[; ;newmain.c: 46:     PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"48
+[; ;newmain.c: 48:     while(1)
+[e :U 63 ]
+"49
+[; ;newmain.c: 49:     {
+{
+"50
+[; ;newmain.c: 50:         for (int i=0; i<9; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 9 `i 65  ]
+[e $U 66  ]
+[e :U 65 ]
+"51
+[; ;newmain.c: 51:         {
+{
+"52
+[; ;newmain.c: 52:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"53
+[; ;newmain.c: 53:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"54
+[; ;newmain.c: 54:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"55
+[; ;newmain.c: 55:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"56
+[; ;newmain.c: 56:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"57
+[; ;newmain.c: 57:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"58
+[; ;newmain.c: 58:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"59
+[; ;newmain.c: 59:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"60
+[; ;newmain.c: 60:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"61
+[; ;newmain.c: 61:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"62
+[; ;newmain.c: 62:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"63
+[; ;newmain.c: 63:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"64
+[; ;newmain.c: 64:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 9 `i 65  ]
+[e :U 66 ]
+}
+"65
+[; ;newmain.c: 65:         for (int i=0; i<9; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 9 `i 68  ]
+[e $U 69  ]
+[e :U 68 ]
+"66
+[; ;newmain.c: 66:         {
+{
+"67
+[; ;newmain.c: 67:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+[; ;newmain.c: 68:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"69
+[; ;newmain.c: 69:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"70
+[; ;newmain.c: 70:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"71
+[; ;newmain.c: 71:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"72
+[; ;newmain.c: 72:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"73
+[; ;newmain.c: 73:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"74
+[; ;newmain.c: 74:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"75
+[; ;newmain.c: 75:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"76
+[; ;newmain.c: 76:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"77
+[; ;newmain.c: 77:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"78
+[; ;newmain.c: 78:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"79
+[; ;newmain.c: 79:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"80
+[; ;newmain.c: 80:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"81
+[; ;newmain.c: 81:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"82
+[; ;newmain.c: 82:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"83
+[; ;newmain.c: 83:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"84
+[; ;newmain.c: 84:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"85
+[; ;newmain.c: 85:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"86
+[; ;newmain.c: 86:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"87
+[; ;newmain.c: 87:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"88
+[; ;newmain.c: 88:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"89
+[; ;newmain.c: 89:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"90
+[; ;newmain.c: 90:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"91
+[; ;newmain.c: 91:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"92
+[; ;newmain.c: 92:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"93
+[; ;newmain.c: 93:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"94
+[; ;newmain.c: 94:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"95
+[; ;newmain.c: 95:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"96
+[; ;newmain.c: 96:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"97
+[; ;newmain.c: 97:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"98
+[; ;newmain.c: 98:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"99
+[; ;newmain.c: 99:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"100
+[; ;newmain.c: 100:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"101
+[; ;newmain.c: 101:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"102
+[; ;newmain.c: 102:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"103
+[; ;newmain.c: 103:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"104
+[; ;newmain.c: 104:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"105
+[; ;newmain.c: 105:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"106
+[; ;newmain.c: 106:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"107
+[; ;newmain.c: 107:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"108
+[; ;newmain.c: 108:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"109
+[; ;newmain.c: 109:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"110
+[; ;newmain.c: 110:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"111
+[; ;newmain.c: 111:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"112
+[; ;newmain.c: 112:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"113
+[; ;newmain.c: 113:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"114
+[; ;newmain.c: 114:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"115
+[; ;newmain.c: 115:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"116
+[; ;newmain.c: 116:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"117
+[; ;newmain.c: 117:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"118
+[; ;newmain.c: 118:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"119
+[; ;newmain.c: 119:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"120
+[; ;newmain.c: 120:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"121
+[; ;newmain.c: 121:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"122
+[; ;newmain.c: 122:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"123
+[; ;newmain.c: 123:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"124
+[; ;newmain.c: 124:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 9 `i 68  ]
+[e :U 69 ]
+}
+"125
+[; ;newmain.c: 125:         for (int i=0; i<9; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 9 `i 71  ]
+[e $U 72  ]
+[e :U 71 ]
+"126
+[; ;newmain.c: 126:         {
+{
+"127
+[; ;newmain.c: 127:             PORTC=0b00001000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 8 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"128
+[; ;newmain.c: 128:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"129
+[; ;newmain.c: 129:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"130
+[; ;newmain.c: 130:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"131
+[; ;newmain.c: 131:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"132
+[; ;newmain.c: 132:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"133
+[; ;newmain.c: 133:             PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"134
+[; ;newmain.c: 134:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"135
+[; ;newmain.c: 135:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"136
+[; ;newmain.c: 136:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"137
+[; ;newmain.c: 137:             PORTA=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"138
+[; ;newmain.c: 138:             PORTA=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"139
+[; ;newmain.c: 139:             PORTA=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"140
+[; ;newmain.c: 140:             PORTA=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTA -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"141
+[; ;newmain.c: 141:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"142
+[; ;newmain.c: 142:             PORTC=0b00000001; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"143
+[; ;newmain.c: 143:             PORTC=0b00000100; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 4 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"144
+[; ;newmain.c: 144:             PORTC=0b00000010; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"145
+[; ;newmain.c: 145:             PORTC=0b00100000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 32 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"146
+[; ;newmain.c: 146:             PORTC=0b00010000; _delay((unsigned long)((80)*(4000000/4000.0)));
+[e = _PORTC -> -> 16 `i `uc ]
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"147
+[; ;newmain.c: 147:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 9 `i 71  ]
+[e :U 72 ]
+}
+"148
+[; ;newmain.c: 148:     }
+}
+[e :U 62 ]
+[e $U 63  ]
+[e :U 64 ]
+"149
+[; ;newmain.c: 149: }
+[e :UE 61 ]
+}
